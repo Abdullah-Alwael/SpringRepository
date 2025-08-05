@@ -1,0 +1,267 @@
+{
+	"info": {
+		"_postman_id": "badf220b-4d24-4b90-88f9-10547a3b9be5",
+		"name": "User management system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46809246",
+		"_collection_link": "https://abdullahalwael.postman.co/workspace/Abdullah-Alwael's-Workspace~0afd19ff-4de9-4144-8b90-6b699a18a04f/collection/46809246-badf220b-4d24-4b90-88f9-10547a3b9be5?action=share&source=collection_link&creator=46809246"
+	},
+	"item": [
+		{
+			"name": "Get all the users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/user/list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Abdullah\",\r\n    \"age\":20,\r\n    \"email\":\"abdullah@admin.com\",\r\n    \"userName\":\"Abdullah_Ali\",\r\n    \"password\":\"pasodasdasd4@!\",\r\n    \"role\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/user/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add user to delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Delete me\",\r\n    \"age\":22,\r\n    \"email\":\"delete@user.com\",\r\n    \"userName\":\"delete_user\",\r\n    \"password\":\"pasodasdasdDELETE4@!\",\r\n    \"role\":\"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/user/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add another user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Ahmed\",\r\n    \"age\":20,\r\n    \"email\":\"Ahmed@user.com\",\r\n    \"userName\":\"Ahmed_Ali\",\r\n    \"password\":\"pasodsdfwer23asdasd4@!\",\r\n    \"role\":\"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/user/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Ahmed updated\",\r\n    \"age\":28,\r\n    \"email\":\"Ahmed@user.com\",\r\n    \"userName\":\"Ahmed_Ali\",\r\n    \"password\":\"pasodsdfwer23asdasd4@!\",\r\n    \"role\":\"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/user/update/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/user/delete/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"delete",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check username and password",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/user/check-username-and-password/Abdullah_Ali/pasodasdasd4@!",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"check-username-and-password",
+						"Abdullah_Ali",
+						"pasodasdasd4@!"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/user/filter/by-email/abdullah@admin.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"filter",
+						"by-email",
+						"abdullah@admin.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get users by role",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/user/filter/by-role/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"filter",
+						"by-role",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get users by age or above",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/user/filter/by-age/23",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"filter",
+						"by-age",
+						"23"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
